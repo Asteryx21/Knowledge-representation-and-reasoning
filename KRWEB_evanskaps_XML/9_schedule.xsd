@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                      targetNamespace="http://www.somesite.com/schema/schedule"
+                      xmlns="http://www.somesite.com/schema/schedule"
+                      elementFormDefault="qualified">
+<xsd:element name="Schedule">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element ref="Event" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+	
+<xsd:element name="Event" type="eventType"/>
+<!-- ======================ERWTHMA 9================ -->
+<xsd:element name="Lesson" type ="lessonType" substitutionGroup="Event"/>	
+<xsd:element name="Seminar" type="seminarType" substitutionGroup="Event"/>
+<xsd:element name="Lab" type="labType" substitutionGroup="Event" />
+<!-- ======================================= -->
+
+<xsd:complexType name="eventType" >
+	<xsd:sequence>
+		<xsd:element name="Title" type="xsd:string"/>
+		<xsd:element name="Lecture" type="lectureType"  minOccurs="1" maxOccurs="9">
+		</xsd:element>
+	</xsd:sequence>
+</xsd:complexType>
+<!-- ======================ERWTHMA 8================ -->
+<xsd:complexType name="lessonType" >
+	<xsd:complexContent>
+		<xsd:extension base='eventType'>
+			<xsd:sequence>
+				<xsd:element name="Professor" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:extension>
+	</xsd:complexContent>
+</xsd:complexType>
+
+<xsd:complexType name="labType">
+	<xsd:complexContent>
+		<xsd:restriction base='eventType'>
+			<xsd:sequence>
+				<xsd:element name="Title" type="xsd:string"/>
+				<xsd:element name='Lecture' type='newType' />
+			</xsd:sequence>
+		</xsd:restriction>
+	</xsd:complexContent>
+</xsd:complexType>
+
+<xsd:complexType name ="seminarType">
+	<xsd:complexContent>
+		<xsd:restriction base='eventType'>
+			<xsd:sequence>
+				<xsd:element name="Title" type="xsd:string"/>
+				<xsd:element name='Lecture' type='lectureType' minOccurs="1" maxOccurs="1"/>
+			</xsd:sequence>
+		</xsd:restriction>
+	</xsd:complexContent>
+</xsd:complexType>
+<!-- ================================================ -->
+<!-- ======================ERWTHMA 8 GIA TO labType================ -->
+<xsd:complexType name="newType">
+	<xsd:complexContent>
+		<xsd:restriction base='lectureType'>
+			<xsd:sequence>
+				<xsd:element name="Day" type="dayType"/>
+				<xsd:element name="Time" type="timeType"/>
+			</xsd:sequence>
+			<xsd:attribute name="Classroom" type="classroomType"  use='prohibited' />
+	
+		</xsd:restriction>
+	</xsd:complexContent>
+</xsd:complexType>
+<!-- ================================================ -->
+<xsd:complexType name="lectureType">
+	<xsd:sequence>
+		<xsd:element name="Day" type="dayType"/>
+		<xsd:element name="Time" type="timeType"/>
+	</xsd:sequence>
+	<xsd:attribute name="Classroom" type="classroomType" use="optional"/>
+</xsd:complexType>
+   
+<xsd:simpleType name="dayType">
+   <xsd:restriction base="xsd:string">
+	   <xsd:enumeration value="Monday"/>
+	   <xsd:enumeration value="Tuesday"/>
+	   <xsd:enumeration value="Wednesday"/>
+	   <xsd:enumeration value="Thursday"/>
+	   <xsd:enumeration value="Friday"/>
+	   <xsd:enumeration value="Saturday"/>
+	   <xsd:enumeration value="Sunday"/>
+   </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="timeType">
+   <xsd:restriction base="xsd:string">
+		<xsd:pattern value="[0-2][0-9]:[0-5][0-9]-[0-2][0-9]:[0-5][0-9]"/>
+   </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="classroomType">
+	<xsd:restriction base="xsd:string">
+		<xsd:maxLength value="8"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+</xsd:schema>

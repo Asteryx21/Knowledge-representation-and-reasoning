@@ -1,0 +1,571 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:uni="http://www.mydomain.org/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.0="uni:" > 
+  <rdf:Description rdf:about="http://www.mydomain.org/PhotographyII">
+    <uni:les_name>Photography II</uni:les_name>
+    <uni:taught_by>Professor7</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Person">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/MathII">
+    <uni:les_name>Math II</uni:les_name>
+    <uni:taught_by>Professor9</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/has_phone">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Person"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema/Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/room_department">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Classroom"/>
+    <rdfs:range rdf:resource="http://www.mydomain.org/Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/ChemistryI">
+    <uni:les_name>Chemistry I</uni:les_name>
+    <uni:taught_by>Professor2</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student8">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma8</uni:has_name>
+    <uni:has_email>Onoma8@chemeng.upatras.gr</uni:has_email>
+    <uni:has_age>24</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Chemical Engineering</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom8">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>B2</uni:room_name>
+    <uni:room_capacity>75</uni:room_capacity>
+    <uni:room_department>Philosophy</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Lesson">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/PhilosophyI">
+    <uni:les_name>Philosophy I</uni:les_name>
+    <uni:taught_by>Professor4</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student4">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma4</uni:has_name>
+    <uni:has_email>Onoma4@ceid.upatras.gr</uni:has_email>
+    <uni:has_age>20</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>CEID</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom4">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>A1</uni:room_name>
+    <uni:room_capacity>250</uni:room_capacity>
+    <uni:room_department>Chemical Engineering</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/teaches">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Professor"/>
+    <rdfs:range rdf:resource="http://www.mydomain.org/Lesson"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom3">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>D2</uni:room_name>
+    <uni:room_capacity>100</uni:room_capacity>
+    <uni:room_department>CEID</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student15">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma15</uni:has_name>
+    <uni:has_email>Onoma15@asfa.uathens.gr</uni:has_email>
+    <uni:has_age>24</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>ASFA</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom15">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>E3</uni:room_name>
+    <uni:room_capacity>100</uni:room_capacity>
+    <uni:room_department>Math</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Professor7">
+    <rdf:type rdf:resource="uni:Professor"/>
+    <uni:has_name>Professor7</uni:has_name>
+    <uni:has_email>email7@asfa.uathens.gr</uni:has_email>
+    <uni:has_age>50</uni:has_age>
+    <uni:has_phone>2610000000</uni:has_phone>
+    <uni:member_of>Fine Arts</uni:member_of>
+    <uni:teaches>PhotographyII</uni:teaches>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student11">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma11</uni:has_name>
+    <uni:has_email>Onoma11@philosophy.upatras.gr</uni:has_email>
+    <uni:has_age>25</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Philosophy</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom11">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>C2</uni:room_name>
+    <uni:room_capacity>70</uni:room_capacity>
+    <uni:room_department>Fine Arts</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Professor3">
+    <rdf:type rdf:resource="uni:Professor"/>
+    <uni:has_name>Professor3</uni:has_name>
+    <uni:has_email>email3@chemeng.upatras.gr</uni:has_email>
+    <uni:has_age>50</uni:has_age>
+    <uni:has_phone>2610000002</uni:has_phone>
+    <uni:member_of>Chemical Engineering</uni:member_of>
+    <uni:teaches>ChemistryII</uni:teaches>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/C++">
+    <uni:les_name>C++</uni:les_name>
+    <uni:taught_by>Professor1</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/dep_city">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Department"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema/Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student1">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma1</uni:has_name>
+    <uni:has_email>Onoma1@ceid.upatras.gr</uni:has_email>
+    <uni:has_age>26</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>CEID</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Python">
+    <uni:les_name>Python</uni:les_name>
+    <uni:taught_by>Professor1</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/UTH">
+    <rdf:type rdf:resource="uni:Department"/>
+    <uni:dep_city>Volos</uni:dep_city>
+    <uni:dep_name>Paedagogical</uni:dep_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Physics1">
+    <uni:taught_by>Kwstas</uni:taught_by>
+    <uni:les_name>Physics1</uni:les_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/MATH">
+    <rdf:type rdf:resource="uni:Department"/>
+    <uni:dep_city>Thessaloniki</uni:dep_city>
+    <uni:dep_name>Math</uni:dep_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student9">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma9</uni:has_name>
+    <uni:has_email>Onoma9@chemeng.upatras.gr</uni:has_email>
+    <uni:has_age>23</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Chemical Engineering</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom9">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>B3</uni:room_name>
+    <uni:room_capacity>100</uni:room_capacity>
+    <uni:room_department>Philosophy</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Department">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student5">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma5</uni:has_name>
+    <uni:has_email>Onoma5@uth.uvolos.gr</uni:has_email>
+    <uni:has_age>24</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Paedagogical</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom5">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>A2</uni:room_name>
+    <uni:room_capacity>150</uni:room_capacity>
+    <uni:room_department>Chemical Engineering</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student17">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma17</uni:has_name>
+    <uni:has_email>Onoma17@asfa.uathens.gr</uni:has_email>
+    <uni:has_age>21</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Fine Arts</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student16">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma16</uni:has_name>
+    <uni:has_email>Onoma16@asfa.uathens.gr</uni:has_email>
+    <uni:has_age>18</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Fine Arts</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Professor4">
+    <rdf:type rdf:resource="uni:Professor"/>
+    <uni:has_name>Professor4</uni:has_name>
+    <uni:has_email>email4@philosophy.upatras.gr</uni:has_email>
+    <uni:has_age>50</uni:has_age>
+    <uni:has_phone>2610000004</uni:has_phone>
+    <uni:member_of>Philosophy</uni:member_of>
+    <uni:teaches>PhilosophyI</uni:teaches>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/MathI">
+    <uni:les_name>Math I</uni:les_name>
+    <uni:taught_by>Professor8</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Physics">
+    <rdf:type rdf:resource="uni:Department"/>
+    <uni:dep_name>Physics</uni:dep_name>
+    <uni:dep_city>Athens</uni:dep_city>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom14">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>E2</uni:room_name>
+    <uni:room_capacity>170</uni:room_capacity>
+    <uni:room_department>Math</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Kwstas">
+    <rdf:type rdf:resource="uni:Professor"/>
+    <uni:has_name>Kwstas</uni:has_name>
+    <uni:has_email>kwstas@physics.gr</uni:has_email>
+    <uni:has_age>30</uni:has_age>
+    <uni:has_phone>6988888888</uni:has_phone>
+    <uni:member_of>Physics</uni:member_of>
+    <uni:teaches>Physics1</uni:teaches>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student12">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma12</uni:has_name>
+    <uni:has_email>Onoma12@philosophy.upatras.gr</uni:has_email>
+    <uni:has_age>21</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Philosophy</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom10">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>C1</uni:room_name>
+    <uni:room_capacity>100</uni:room_capacity>
+    <uni:room_department>Fine Arts</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student20">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma20</uni:has_name>
+    <uni:has_email>Onoma20@math.uthess.gr</uni:has_email>
+    <uni:has_age>25</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Math</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/GreekII">
+    <uni:les_name>Greek II</uni:les_name>
+    <uni:taught_by>Professor10</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/room_name">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Classroom"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema/Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/philosophy">
+    <rdf:type rdf:resource="uni:Department"/>
+    <uni:dep_city>Patra</uni:dep_city>
+    <uni:dep_name>Philosophy</uni:dep_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Java">
+    <uni:les_name>Java</uni:les_name>
+    <uni:taught_by>Professor1</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Professor8">
+    <rdf:type rdf:resource="uni:Professor"/>
+    <uni:has_name>Professor8</uni:has_name>
+    <uni:has_email>email8@math.uthess.gr</uni:has_email>
+    <uni:has_age>50</uni:has_age>
+    <uni:has_phone>2610000000</uni:has_phone>
+    <uni:member_of>Math</uni:member_of>
+    <uni:teaches>MathI</uni:teaches>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom18">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>F3</uni:room_name>
+    <uni:room_capacity>50</uni:room_capacity>
+    <uni:room_department>Paedagogical</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/ChemistryII">
+    <uni:les_name>Chemistry II</uni:les_name>
+    <uni:taught_by>Professor3</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student2">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma2</uni:has_name>
+    <uni:has_email>Onoma2@ceid.upatras.gr</uni:has_email>
+    <uni:has_age>18</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>CEID</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/has_name">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Person"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/SoftwareQuality">
+    <uni:les_name>Software Quality</uni:les_name>
+    <uni:taught_by>Professor1</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Professor">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.mydomain.org/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student6">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma6</uni:has_name>
+    <uni:has_email>Onoma6@uth.uvolos.gr</uni:has_email>
+    <uni:has_age>19</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Paedagogical</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom6">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>A3</uni:room_name>
+    <uni:room_capacity>50</uni:room_capacity>
+    <uni:room_department>Chemical Engineering</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/ASFA">
+    <rdf:type rdf:resource="uni:Department"/>
+    <uni:dep_city>Athens</uni:dep_city>
+    <uni:dep_name>Fine Arts</uni:dep_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student18">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma18</uni:has_name>
+    <uni:has_email>Onoma18@math.uthess.gr</uni:has_email>
+    <uni:has_age>19</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Math</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Professor5">
+    <rdf:type rdf:resource="uni:Professor"/>
+    <uni:has_name>Professor5</uni:has_name>
+    <uni:has_email>email5@philosophy.upatras.gr</uni:has_email>
+    <uni:has_age>50</uni:has_age>
+    <uni:has_phone>2610000000</uni:has_phone>
+    <uni:member_of>Philosophy</uni:member_of>
+    <uni:teaches>PhilosophyII</uni:teaches>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom1">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>AB</uni:room_name>
+    <uni:room_capacity>200</uni:room_capacity>
+    <uni:room_department>CEID</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom13">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>E1</uni:room_name>
+    <uni:room_capacity>250</uni:room_capacity>
+    <uni:room_department>Math</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student13">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma13</uni:has_name>
+    <uni:has_email>Onoma14@philosophy.upatras.gr</uni:has_email>
+    <uni:has_age>22</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Philosophy</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.mydomain.org/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Professor1">
+    <rdf:type rdf:resource="uni:Professor"/>
+    <uni:has_name>Professor1</uni:has_name>
+    <uni:has_email>email1@ceid.upatras.gr</uni:has_email>
+    <uni:has_age>50</uni:has_age>
+    <uni:has_phone>2610000001</uni:has_phone>
+    <uni:member_of>CEID</uni:member_of>
+    <uni:teaches>Java</uni:teaches>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/dep_name">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Department"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema/Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/member_of">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Person"/>
+    <rdfs:range rdf:resource="http://www.mydomain.org/Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/P1">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>P1</uni:room_name>
+    <uni:room_capacity>150</uni:room_capacity>
+    <uni:room_department>Physics</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Professor9">
+    <rdf:type rdf:resource="uni:Professor"/>
+    <uni:has_name>Professor9</uni:has_name>
+    <uni:has_email>email9@math.uthess.gr</uni:has_email>
+    <uni:has_age>50</uni:has_age>
+    <uni:has_phone>2610000000</uni:has_phone>
+    <uni:member_of>Math</uni:member_of>
+    <uni:teaches>MathII</uni:teaches>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom17">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>F2</uni:room_name>
+    <uni:room_capacity>80</uni:room_capacity>
+    <uni:room_department>Paedagogical</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student3">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma3</uni:has_name>
+    <uni:has_email>Onoma3@ceid.upatras.gr</uni:has_email>
+    <uni:has_age>24</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>CEID</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/has_email">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Person"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema/Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/chemeng">
+    <rdf:type rdf:resource="uni:Department"/>
+    <uni:dep_city>Patra</uni:dep_city>
+    <uni:dep_name>Chemical Engineering</uni:dep_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Panagiwths">
+    <uni:member_of>Physics</uni:member_of>
+    <uni:has_phone>6933333333</uni:has_phone>
+    <uni:has_age>25</uni:has_age>
+    <uni:has_email>pan@physics.gr</uni:has_email>
+    <uni:has_name>Panagiwths</uni:has_name>
+    <rdf:type rdf:resource="uni:Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/has_age">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Person"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema/Integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/taught_by">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Lesson"/>
+    <rdfs:range rdf:resource="http://www.mydomain.org/Professor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/room_capacity">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Classroom"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema/Integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student7">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma7</uni:has_name>
+    <uni:has_email>Onoma7@uth.uvolos.gr</uni:has_email>
+    <uni:has_age>25</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Paedagogical</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom7">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>B1</uni:room_name>
+    <uni:room_capacity>150</uni:room_capacity>
+    <uni:room_department>Philosophy</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student19">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma19</uni:has_name>
+    <uni:has_email>Onoma19@math.uthess.gr</uni:has_email>
+    <uni:has_age>23</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Math</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/CEID">
+    <rdf:type rdf:resource="uni:Department"/>
+    <uni:dep_city>Patra</uni:dep_city>
+    <uni:dep_name>CEID</uni:dep_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom16">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>F1</uni:room_name>
+    <uni:room_capacity>200</uni:room_capacity>
+    <uni:room_department>Paedagogical</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom2">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>D1</uni:room_name>
+    <uni:room_capacity>100</uni:room_capacity>
+    <uni:room_department>CEID</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student14">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma14</uni:has_name>
+    <uni:has_email>Onoma14@asfa.uathens.gr</uni:has_email>
+    <uni:has_age>19</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Fine Arts</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Professor6">
+    <rdf:type rdf:resource="uni:Professor"/>
+    <uni:has_name>Professor6</uni:has_name>
+    <uni:has_email>email6@asfa.uathens.gr</uni:has_email>
+    <uni:has_age>50</uni:has_age>
+    <uni:has_phone>2610000000</uni:has_phone>
+    <uni:member_of>Fine Arts</uni:member_of>
+    <uni:teaches>PhotographyI</uni:teaches>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Classroom12">
+    <rdf:type rdf:resource="uni:Classroom"/>
+    <uni:room_name>C3</uni:room_name>
+    <uni:room_capacity>50</uni:room_capacity>
+    <uni:room_department>Fine Arts</uni:room_department>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Student10">
+    <rdf:type rdf:resource="uni:Student"/>
+    <uni:has_name>Onoma10</uni:has_name>
+    <uni:has_email>Onoma10@chemeng.upatras.gr</uni:has_email>
+    <uni:has_age>19</uni:has_age>
+    <uni:has_phone>2610111111</uni:has_phone>
+    <uni:member_of>Chemical Engineering</uni:member_of>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Professor2">
+    <rdf:type rdf:resource="uni:Professor"/>
+    <uni:has_name>Professor2</uni:has_name>
+    <uni:has_email>email2@chemeng.upatras.gr</uni:has_email>
+    <uni:has_age>50</uni:has_age>
+    <uni:has_phone>2610000000</uni:has_phone>
+    <uni:member_of>Chemical Engineering</uni:member_of>
+    <uni:teaches>ChemistryI</uni:teaches>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Web">
+    <uni:les_name>Web development</uni:les_name>
+    <uni:taught_by>Professor1</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/les_name">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.mydomain.org/Lesson"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema/Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/PhotographyI">
+    <uni:les_name>Photography I</uni:les_name>
+    <uni:taught_by>Professor6</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/PhilosophyII">
+    <uni:les_name>Philosophy II</uni:les_name>
+    <uni:taught_by>Professor5</uni:taught_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/Professor10">
+    <rdf:type rdf:resource="uni:Professor"/>
+    <uni:has_name>Professor10</uni:has_name>
+    <uni:has_email>email10@uth.uvolos.gr</uni:has_email>
+    <uni:has_age>54</uni:has_age>
+    <uni:has_phone>2610000000</uni:has_phone>
+    <uni:member_of>Paedagogical</uni:member_of>
+    <uni:teaches>GreekI</uni:teaches>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mydomain.org/GreekI">
+    <uni:les_name>Greek I</uni:les_name>
+    <uni:taught_by>Professor10</uni:taught_by>
+  </rdf:Description>
+</rdf:RDF>

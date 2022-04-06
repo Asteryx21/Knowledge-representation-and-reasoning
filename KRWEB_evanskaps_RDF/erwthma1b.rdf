@@ -1,0 +1,18 @@
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:il="http://www.mydomain.org/">
+	
+	<rdf:Description rdf:about="http://www.mydomain.org/Iliada">
+		<il:composed_by>
+			<rdf:Description rdf:nodeID="poet">
+				<il:lived_in> rdf:resource="http://www.mydomain.org/Ionia"/>
+				<il:lived_at> 8th century BC </il:lived_at>
+			</rdf:Description>
+		</il:composed_by>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://www.mydomain.org/Ionia">
+		<il:located_at> Asia Minor </il:located_at>
+	</rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,1030 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:movies="http://www.semanticweb.org/evans/ontologies/movies#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Golden_Globes">
+    <movies:has_award rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Golden_Globe"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#FilmFestival"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:rest rdf:nodeID="A1"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Distributor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:nodeID="A3"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Distributor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Golden_Globe">
+    <movies:awarded_to rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie2"/>
+    <movies:awarded_at rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Golden_Globes"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAward"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Horror_House_OST">
+    <movies:composed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Test_Composer"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#LicensedSoundtrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <movies:associated_with rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Horror_House"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <owl:onClass rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#written_by"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Director">
+    <rdfs:subClassOf rdf:nodeID="A5"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#written_by">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Screenplay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Actor2">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarlett Johansson</movies:name>
+    <movies:birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-11-22</movies:birth_date>
+    <movies:featured_in rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie1"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Adventure">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Person"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#awarded_to"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Composer1">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John Williams</movies:name>
+    <movies:composer_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie1_OST"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Soundtrack"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#composer_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Composer">
+    <rdfs:subClassOf rdf:nodeID="A7"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#OriginalScreenplay">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Screenplay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Romance">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <owl:onClass rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#directed_by"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Mystery">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Soundtrack">
+    <owl:disjointUnionOf rdf:nodeID="A9"/>
+    <rdfs:subClassOf rdf:nodeID="A10"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAssociatedProduct"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Test_Writer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Test Writer</movies:name>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:rest rdf:nodeID="A12"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#composer_of">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Soundtrack"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#duration">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie1">
+    <movies:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80000000</movies:budget>
+    <movies:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PG 13</movies:rating>
+    <movies:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-01-04</movies:release_date>
+    <movies:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movie 1</movies:title>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <movies:directed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director1"/>
+    <movies:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</movies:duration>
+    <movies:features_actor rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Fantasy"/>
+    <movies:has_language rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#English"/>
+    <movies:features_actor rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor1"/>
+    <movies:winner_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Oscar"/>
+    <movies:distributed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Paramount_Pictures"/>
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Action"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Director3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orson Welles</movies:name>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movies">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#1o_lykeio_amarousiou">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Place"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Walt_Disney_Studios">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Distributor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAward"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#has_award"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Screenplay">
+    <owl:disjointUnionOf rdf:nodeID="A14"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Soundtrack"/>
+    <rdfs:subClassOf rdf:nodeID="A4"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAssociatedProduct"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <owl:unionOf rdf:nodeID="A2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Actor3">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johnny Depp</movies:name>
+    <movies:birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1963-06-09</movies:birth_date>
+    <movies:winner_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Golden_Bear"/>
+    <movies:featured_in rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie2"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#BAFTA_Awards">
+    <movies:has_award rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#BAFTA"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#FilmFestival"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Place"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#has_filming_location"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie3_script">
+    <movies:written_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer4"/>
+    <movies:associated_with rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie3"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#OriginalScreenplay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#associated_with">
+    <rdfs:range rdf:nodeID="A19"/>
+    <rdfs:domain rdf:nodeID="A20"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#MovieAward">
+    <rdfs:subClassOf rdf:nodeID="A21"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movies"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Comedy">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:rest rdf:nodeID="A22"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#LicensedSoundtrack"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Distributor">
+    <rdfs:subClassOf rdf:nodeID="A23"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Organization"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Wild_west_Texas">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Place"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Paramount_Pictures">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <movies:distributer_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie1"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Distributor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#featured_in">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#features_actor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <owl:onClass rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Languages"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#has_language"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Director2">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stanley Kubrick</movies:name>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieCrew"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Test_Director">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Test Director</movies:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#budget">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <owl:unionOf rdf:nodeID="A25"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Person">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieCrew"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Actor4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thanasis Vegos</movies:name>
+    <movies:birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1927-05-29</movies:birth_date>
+    <movies:featured_in rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie5"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Writer3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Elliott</movies:name>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#director_of">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAward"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#winner_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie6_OST">
+    <movies:composed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer4"/>
+    <movies:associated_with rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie6"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#OriginalSoundtrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Composer3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hans Zimmer</movies:name>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <rdf:rest rdf:nodeID="A28"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieStuff"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Miramax_Films">
+    <movies:distributer_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie2"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Distributor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#composed_by">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Soundtrack"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#composer_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Horror">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#birth_date">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#awarded_at">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#FilmFestival"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAward"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#has_award"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#MovieAssociatedProduct">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieStuff"/>
+    <owl:equivalentClass rdf:nodeID="A29"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#featured_in"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Fantasy">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Golden_Lion">
+    <movies:awarded_at rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Venice_Film_Festival"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAward"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Greek">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Languages"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#MovieStuff">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Place"/>
+    <rdfs:subClassOf rdf:nodeID="A26"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movies"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#LicensedSoundtrack">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#OriginalSoundtrack"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Soundtrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Director1">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steven Spielberg</movies:name>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#features_actor">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Languages">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movies"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#winner_of">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAward"/>
+    <rdfs:domain rdf:nodeID="A31"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie6">
+    <movies:directed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director5"/>
+    <movies:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pirates of the Caribbean: The Curse of the Black Pearl</movies:title>
+    <movies:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">143</movies:duration>
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Action"/>
+    <movies:has_production_country rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#US"/>
+    <movies:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-07-09</movies:release_date>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Fantasy"/>
+    <movies:has_language rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#English"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <movies:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#int">140000000</movies:budget>
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Adventure"/>
+    <movies:plot_summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blacksmith Will Turner teams up with eccentric pirate "Captain" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.</movies:plot_summary>
+    <movies:features_actor rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor7"/>
+    <movies:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PG 13</movies:rating>
+    <movies:winner_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#BAFTA"/>
+    <movies:distributed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Walt_Disney_Studios"/>
+    <movies:features_actor rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAssociatedProduct"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <rdf:rest rdf:nodeID="A33"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#AdaptedScreenplay"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Writer4">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Damien Chazelle</movies:name>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie2_OST">
+    <movies:composed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer2"/>
+    <movies:associated_with rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie2"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#OriginalSoundtrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#MovieCrew">
+    <owl:disjointUnionOf rdf:nodeID="A11"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movies"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Actor5">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tzeni Karezi</movies:name>
+    <movies:birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1932-01-12</movies:birth_date>
+    <movies:featured_in rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie5"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Warner_Bros.">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Distributor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A34">
+    <rdf:rest rdf:nodeID="A35"/>
+    <rdf:first rdf:nodeID="A36"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie4_script">
+    <movies:written_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer4"/>
+    <movies:associated_with rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie4"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#OriginalScreenplay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#distributer_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A37">
+    <owl:unionOf rdf:nodeID="A27"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Composer2">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ennio Morricone</movies:name>
+    <movies:composer_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie2_OST"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#OriginalSoundtrack">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Soundtrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A38">
+    <owl:onClass rdf:nodeID="A15"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#distributed_by"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Golden_Bear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <movies:awarded_to rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor3"/>
+    <movies:awarded_at rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Berlin_Film_Festival"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAward"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie">
+    <rdfs:subClassOf rdf:nodeID="A38"/>
+    <rdfs:subClassOf rdf:nodeID="A24"/>
+    <rdfs:subClassOf rdf:nodeID="A8"/>
+    <rdfs:subClassOf rdf:nodeID="A17"/>
+    <rdfs:subClassOf rdf:nodeID="A39"/>
+    <rdfs:subClassOf rdf:nodeID="A40"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieStuff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#title">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Country">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Place"/>
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Languages"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Place">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movies"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Chinese">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Languages"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie5">
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Comedy"/>
+    <movies:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movie 5</movies:title>
+    <movies:features_actor rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor4"/>
+    <movies:directed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director4"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <movies:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#int">200000</movies:budget>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <movies:features_actor rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor5"/>
+    <movies:has_language rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Greek"/>
+    <movies:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">68</movies:duration>
+    <movies:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1960-05-12</movies:release_date>
+    <movies:plot_summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A funny old movie featuring 2 huge greek cinema stars thanasis vegos and tzeni karezi ! H nifi to skase!</movies:plot_summary>
+    <movies:has_filming_location rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#1o_lykeio_amarousiou"/>
+    <movies:has_production_country rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Greece"/>
+    <movies:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</movies:rating>
+    <movies:distributed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#FinosFilm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Actor6">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Margot Robbie</movies:name>
+    <movies:birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-07-02</movies:birth_date>
+    <movies:featured_in rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie3"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A33">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#OriginalScreenplay"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A41">
+    <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#associated_with"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#distributer_of">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdfs:domain rdf:nodeID="A42"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Writer1">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quentin Tarantino</movies:name>
+    <movies:writer_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie1_script"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <owl:unionOf rdf:nodeID="A43"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#has_genre">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieGenre"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Organization">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieCrew"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#plot_summary">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#has_production_country">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Country"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#has_filming_location"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#writer_of">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Screenplay"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#written_by"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Oscar">
+    <movies:awarded_to rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor1"/>
+    <movies:awarded_at rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Academy_Awards"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAward"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A36">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#associated_with"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <owl:unionOf rdf:nodeID="A44"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Writer">
+    <rdfs:subClassOf rdf:nodeID="A45"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#MovieGenre">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movies"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Horror_House">
+    <movies:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horror House</movies:title>
+    <movies:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-12</movies:release_date>
+    <movies:has_language rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Chinese"/>
+    <movies:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R</movies:rating>
+    <movies:distributed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Paramount_Pictures"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <movies:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500000</movies:budget>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <movies:directed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Test_Director"/>
+    <movies:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">65</movies:duration>
+    <movies:features_actor rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Test_Actor"/>
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Horror"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A46">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#awarded_to">
+    <rdfs:range rdf:nodeID="A37"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#winner_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Horror_House_script">
+    <movies:written_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Test_Writer"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#OriginalScreenplay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <movies:associated_with rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Horror_House"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Palme_d&apos;Or">
+    <movies:awarded_at rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Cannes_Film_Festival"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAward"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Actor7">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geoffrey Rush</movies:name>
+    <movies:birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1951-07-06</movies:birth_date>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Berlin_Film_Festival">
+    <movies:has_award rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Golden_Bear"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#FilmFestival"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie1_script">
+    <movies:written_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer1"/>
+    <movies:associated_with rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie1"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#AdaptedScreenplay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Writer2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joel Coen</movies:name>
+    <movies:writer_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie2_script"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#OriginalSoundtrack"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <rdf:rest rdf:nodeID="A32"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A47">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAssociatedProduct"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Composer4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Klaus Badelt</movies:name>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#has_language">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Languages"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Greece">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Country"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Western">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A41"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie3_OST">
+    <movies:composed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer3"/>
+    <movies:associated_with rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie3"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Soundtrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A45">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Screenplay"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#writer_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Actor">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer"/>
+    <rdfs:subClassOf rdf:nodeID="A30"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#English">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Languages"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie4">
+    <movies:plot_summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A very very scary movie with awards</movies:plot_summary>
+    <movies:winner_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#BAFTA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <movies:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3000000</movies:budget>
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Horror"/>
+    <movies:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R</movies:rating>
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Fantasy"/>
+    <movies:distributed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Paramount_Pictures"/>
+    <movies:has_language rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#English"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <movies:has_production_country rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#UK"/>
+    <movies:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-04-18</movies:release_date>
+    <movies:features_actor rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor2"/>
+    <movies:winner_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Palme_d&apos;Or"/>
+    <movies:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movie 4</movies:title>
+    <movies:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</movies:duration>
+    <movies:directed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Venice_Film_Festival">
+    <movies:has_award rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Golden_Lion"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#FilmFestival"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#rating">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A48">
+    <rdf:rest rdf:nodeID="A46"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Distributor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#distributed_by">
+    <rdfs:range rdf:nodeID="A49"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#distributer_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <owl:unionOf rdf:nodeID="A50"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#director_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Academy_Awards">
+    <movies:has_award rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Oscar"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#FilmFestival"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#FilmFestival">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Languages"/>
+    <rdfs:subClassOf rdf:nodeID="A13"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movies"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Country"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#has_production_country"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Test_Actor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <movies:birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-12-12</movies:birth_date>
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Test Actor</movies:name>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#directed_by">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#director_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie1_OST">
+    <movies:composed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer1"/>
+    <movies:associated_with rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie1"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#LicensedSoundtrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Cannes_Film_Festival">
+    <movies:has_award rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Palme_d&apos;Or"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#FilmFestival"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Action">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A51">
+    <rdf:rest rdf:nodeID="A34"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieStuff"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#BAFTA">
+    <movies:awarded_to rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor2"/>
+    <movies:awarded_at rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#BAFTA_Awards"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAward"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <owl:onClass rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#composed_by"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Director5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gore Verbinski</movies:name>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#has_filming_location">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Place"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie3">
+    <movies:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movie 3</movies:title>
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Drama"/>
+    <movies:winner_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Golden_Lion"/>
+    <movies:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PG 13</movies:rating>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <movies:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">150</movies:duration>
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Mystery"/>
+    <movies:features_actor rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor6"/>
+    <movies:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-03</movies:release_date>
+    <movies:directed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director3"/>
+    <movies:features_actor rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor3"/>
+    <movies:distributed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Warner_Bros."/>
+    <movies:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10000000</movies:budget>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Test_Composer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Test Composer</movies:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#release_date">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie2_script">
+    <movies:written_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer2"/>
+    <movies:associated_with rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie2"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#AdaptedScreenplay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#AdaptedScreenplay">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#OriginalScreenplay"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Screenplay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#US">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Country"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A49">
+    <owl:unionOf rdf:nodeID="A48"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieGenre"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#has_genre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A50">
+    <rdf:rest rdf:nodeID="A47"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A43">
+    <rdf:rest rdf:nodeID="A18"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieStuff"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Actor1">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leonardo Dicaprio</movies:name>
+    <movies:birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-11-11</movies:birth_date>
+    <movies:winner_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Oscar"/>
+    <movies:featured_in rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie2"/>
+    <movies:featured_in rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie1"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#UK">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Country"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#FinosFilm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Distributor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Drama">
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie4_OST">
+    <movies:composed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Composer3"/>
+    <movies:associated_with rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie4"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#OriginalSoundtrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A42">
+    <owl:unionOf rdf:nodeID="A0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#has_award">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieAward"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#FilmFestival"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <owl:intersectionOf rdf:nodeID="A51"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A44">
+    <rdf:rest rdf:nodeID="A16"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#MovieStuff"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie2">
+    <movies:directed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director2"/>
+    <movies:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-12-24</movies:release_date>
+    <movies:has_production_country rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#US"/>
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Western"/>
+    <movies:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PG 13</movies:rating>
+    <movies:has_language rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#English"/>
+    <movies:winner_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Golden_Globe"/>
+    <movies:distributed_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Miramax_Films"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <movies:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movie 2</movies:title>
+    <movies:winner_of rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Golden_Bear"/>
+    <movies:features_actor rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor3"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie"/>
+    <movies:has_filming_location rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Wild_west_Texas"/>
+    <movies:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</movies:duration>
+    <movies:has_genre rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Comedy"/>
+    <movies:features_actor rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Actor1"/>
+    <movies:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4000000</movies:budget>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Director4">
+    <movies:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Woody Allen</movies:name>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Director"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/evans/ontologies/movies#Movie6_script">
+    <movies:written_by rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Writer3"/>
+    <movies:associated_with rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#Movie6"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/evans/ontologies/movies#AdaptedScreenplay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

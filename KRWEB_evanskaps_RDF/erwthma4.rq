@@ -1,0 +1,60 @@
+PREFIX uni: <http://www.mydomain.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/22-rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+#################### 4o ερώτημα ###############################
+SELECT ?classname ?capacity
+WHERE {
+	?x rdf:type <uni:Classroom>.
+	?x uni:room_name ?classname.
+	?x uni:room_department ?dep.
+	?x uni:room_capacity ?capacity.
+	FILTER (xsd:integer(?capacity)> 150).
+	?d uni:dep_name ?dep;
+		uni:dep_city ?city.
+	FILTER(?city='Patra').
+	}
+
+## ####################1ο ερώτημα ##########################
+#SELECT ?phone
+#WHERE {
+#    ?x rdf:type <uni:Professor> .
+#    ?x uni:has_phone ?phone .
+#    }
+
+
+####################### 2o ερώτημα #######################
+#SELECT ?phone
+#WHERE {
+#    ?student rdf:type <uni:Student>.
+#    ?student uni:has_age ?age.
+#    FILTER (?age>'23').
+#	?student uni:has_phone ?phone.
+#}
+
+#################### 3o ερώτημα ###############################
+#SELECT ?fullname
+#WHERE {
+#    {?name rdf:type <uni:Student>} UNION {?name rdf:type <uni:Professor>}.
+#	?name uni:has_name ?fullname.
+#	?name uni:member_of ?dep.
+#	?c uni:dep_name ?dep;
+#		uni:dep_city ?city.
+#		FILTER(?city='Patra').
+#	}
+
+
+
+
+
+
+### test for erwthma 5
+#SELECT ?lesson ?prof  ?depart
+#WHERE {
+#	?x rdf:type <uni:Professor> .
+#	?x uni:has_name ?prof.
+#	?x uni:member_of ?depart .
+#	?y uni:taught_by ?prof.
+#	?y uni:les_name ?lesson.
+#	}

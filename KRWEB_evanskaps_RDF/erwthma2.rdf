@@ -1,0 +1,15 @@
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:a="http://description.org/schema/">
+
+<rdf:Description rdf:about="Statement1">
+	<rdf:subject rdf:resource="H/Y"/>
+	<rdf:predicate rdf:resource="Briskete"/>
+	<rdf:object>Rio</rdf:object>
+</rdf:Description>
+
+<rdf:Description rdf:about="google">
+	<a:says rdf:resource="Statement1"/>
+</rdf:Description>
+
+</rdf:RDF>
